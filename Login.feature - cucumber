@@ -1,0 +1,13 @@
+Business Need: Be able to log in
+  Scenario: Login as an administrator
+    Given I am an admin
+    When I sign in
+    Then I should see clients management page
+    
+    
+    Facebook.feature:
+    
+    Business Need: Login to Facebook
+  Scenario: Login to Facebook
+    When I login to Facebook
+Then I should see my name
