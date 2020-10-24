@@ -1,0 +1,26 @@
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class TestsP {
+    private ChromeDriver driver;
+    private WebDriverWait wait;
+
+    @BeforeMethod
+    void setUp(){
+        System.setProperty("webdriver.chrome.driver", "/Users/paulina/sda/chromedriver");
+        this.driver = new ChromeDriver();
+        this.wait = new WebDriverWait(this.driver,10);
+    }
+    @AfterMethod
+    void teardown(){
+        this.driver.close();
+        
+    }
+
+}
+
+
+close= 1 tab
+quit= przegladarka
